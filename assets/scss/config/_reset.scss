@@ -1,65 +1,91 @@
-html {
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: $color-dark-3xl;
+}
+
+*:before, 
+*:after {
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+:focus, 
+:active {
+  outline: none;
 }
 
-ul[class],
-ol[class] {
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+	width: 100%;
+  height: 100%;
+	font-size: $fontSize;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+	line-height: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+} 
+
+button::-moz-focus-inner {
   padding: 0;
+  border: 0;
 }
 
-body,
+a {
+  text-decoration: none;
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul, 
+li {
+  list-style: none;
+} 
+
+img {
+  vertical-align: top;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
+h6 {
+  font-size:inherit;
+  font-weight: 400;
 }
 
-ul[class] {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-a {
-  text-decoration: none;
+sup {
   color: inherit;
-}
-
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
 }

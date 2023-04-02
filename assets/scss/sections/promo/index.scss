@@ -1,0 +1,45 @@
+.promo {
+	position: relative;
+	min-height: 100vh;
+	padding-top: 340px;
+	padding-bottom: 240px;
+	background: url('../images/start-screen-gradient-background.png');
+	background-size: cover;
+
+	&__container {}
+
+	&__content {
+		position: relative;
+		z-index: 2;
+
+		max-width: 460px;
+		color: #fff;
+	}
+
+	&__title {
+		margin-bottom: 42px;
+		max-width: 310px;
+
+		font-size: 44px;
+		line-height: 130%;
+		color: $color-light-xl;
+	}
+
+	&__text {
+		margin-bottom: 42px;
+
+		font-family: Arial;
+		font-size: 15px;
+		line-height: 160%;
+		color: $color-dark-s;
+	}
+
+	&__button {}
+
+	&__image {
+		position: absolute;
+		bottom: 0;
+		right: 40px;
+		z-index: 1;
+	}
+}

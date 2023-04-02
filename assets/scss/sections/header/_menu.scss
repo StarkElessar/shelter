@@ -1,0 +1,33 @@
+.menu {
+	font-family: Arial;
+	font-size: 15px;
+	color: $color-dark-s;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 35px;
+	}
+
+	&__item {}
+
+	&__link {
+		padding: 6px 0;
+		color: $color-dark-s;
+		font-size: 15px;
+		line-height: 160%;
+		transition: color .3s;
+
+		&_active {
+			border-bottom: 3px solid $color-primary;
+			color: $color-light-s;
+		}
+
+		&:hover {
+			color: $color-light-s;
+		}
+
+	}
+
+}
